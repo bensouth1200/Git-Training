@@ -6,4 +6,5 @@ This file is used in the merge conflict lab. Everyone edits the same line on pur
 
 ## Tips
 
-- TODO: replace this line with your tip
+- Commit early and often. Small commits are easy to review and easy to undo.
+- Facilitator tip: pull from upstream before you start any new piece of work.

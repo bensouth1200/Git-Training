@@ -2,10 +2,6 @@
 
 <!-- One or two sentences. Example: "Adds my attendee profile." -->
 
-## Reviewer
-
-<!-- Mention a classmate so they know to look. Example: @their-github-username please review -->
-
 ## Checklist
 
 - [ ] I worked on a branch, not on `main`

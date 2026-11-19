@@ -10,7 +10,7 @@ Practice repository for the ThunderSF Git & Version Control training.
 |---|---|
 | `attendees/_template.md` | Copy this to create your own profile in the first lab |
 | `attendees/` | Everyone's profile files (one file per person, so nobody collides) |
-| `team-tips.md` | Shared file for the merge conflict lab |
+| `team-tips.md` | Practice file for the merge conflict lab (Module 4). You edit it only in your own fork |
 | `.github/pull_request_template.md` | Pre-fills the description of your pull request |
 | `.github/workflows/` | Automated checks and the merge bot (see below) |
 | `scripts/` | Helper scripts used by the checks and by facilitators |
@@ -24,6 +24,10 @@ You do not push to this repository directly. You work in your own **fork** (a pe
 3. Once the check passes and someone other than you has commented, the bot merges it.
 
 In real client repositories, the merge step requires a human approval. The bot is here only so a large group can finish in one session.
+
+## Lab markers (Module 4)
+
+Module 4 uses two read-only items in this repository: the tag `conflict-lab-start` and the branch `conflict-lab-teammate`. They are never merged into `main`. You fetch them into your own fork and do the lab there, so no pull request to this repository is needed. Please don't delete or change them.
 
 ## Labs
 

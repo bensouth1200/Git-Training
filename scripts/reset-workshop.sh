@@ -5,6 +5,10 @@
 # on a new branch, then opens a pull request. Review and merge it yourself
 # (repo admins can bypass the peer-comment bot).
 #
+# This does NOT touch the Module 4 lab. The tag 'conflict-lab-start' and the branch
+# 'conflict-lab-teammate' stay as they are, so you do not need to re-run
+# seed-conflict-lab.sh after a reset.
+#
 # Run from the root of a clone of the ORG repo (not a fork). Needs: git, gh (logged in).
 set -euo pipefail
 
@@ -17,7 +21,7 @@ git switch -c "$branch"
 # Remove all attendee profiles except the template
 find attendees -type f -name '*.md' ! -name '_template.md' -print -delete
 
-# Restore the conflict-lab file to its starting state
+# Restore team-tips.md to its baseline (the Module 4 lab depends on the TODO line)
 cat > team-tips.md <<'EOF'
 # Team Tips
 
@@ -43,5 +47,5 @@ git push -u origin "$branch"
 gh pr create --fill --base main --head "$branch"
 
 echo
-echo "Next: merge the reset PR, then run scripts/seed-conflict-lab.sh to prepare Module 4."
+echo "Next: merge the reset PR. Module 4 needs nothing more (leave the conflict-lab-start tag and the conflict-lab-teammate branch alone)."
 echo "Reminder: ask previous attendees to delete their forks, or leave them. Forks are independent copies."
